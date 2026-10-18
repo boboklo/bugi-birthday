@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bugi-birthday
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: VITE_NOTIFY_EMAIL
+        value: aminha3tam@gmail.com

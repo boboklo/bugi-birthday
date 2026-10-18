@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Lalezar", "Vazirmatn", system-ui, sans-serif;
+    --font-body: "Vazirmatn", system-ui, sans-serif;
+    --ink: #2a1a4a;
+    --outline-text: 3px 0 0 #2a1a4a, -3px 0 0 #2a1a4a, 0 3px 0 #2a1a4a, 0 -3px 0 #2a1a4a, 2px 2px 0 #2a1a4a, -2px 2px 0 #2a1a4a, 2px -2px 0 #2a1a4a, -2px -2px 0 #2a1a4a, 0 5px 0 #2a1a4a;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+  }
+}
+
+.text-pop {
+  font-family: var(--font-display);
+  color: #ffffff;
+  text-shadow: var(--outline-text);
+}
+
+@keyframes wig {
+  0%, 100% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes flick {
+  from {
+    transform: scale(1, 1) rotate(-4deg);
+  }
+  to {
+    transform: scale(0.9, 1.15) rotate(4deg);
+  }
+}
+
+@keyframes puff {
+  0% {
+    opacity: 0.9;
+    transform: translateY(0) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px) scale(2.4);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-8px) rotate(-1.5deg);
+  }
+  40% {
+    transform: translateX(8px) rotate(1.5deg);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes blink {
+  0%, 92%, 100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.1);
+  }
+}

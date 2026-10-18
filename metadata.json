@@ -1,0 +1,6 @@
+{
+  "name": "تست برنامه‌نویس واقعی | باگی",
+  "description": "یک تجربه تعاملی جذاب و شیرین تولد با شخصیت بامزه باگی، کیک و شمع‌های تعاملی، معمای پاکت، نامه‌ی اختصاصی و برنامه‌ریز قرار دوستانه.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
